@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Centro Veterinario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="centroVeterinario.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body>
+        <nav id="menu">                                    
+            <ul>
+                <li><a href="https://es.wikipedia.org/wiki/Medicina_veterinaria">Servicios</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Medicamentos_veterinarios">Productos</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Escuela_para_perros">Guarderia</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Wikiproyecto:Veterinaria">Promociones</a></li>
+            </ul>
+	</nav>
+        <header>
+            <img src="imagenes/logo centro_veterinario.png" alt="" id="logo"/>
+            <img src="imagenes/convivencia-entre-perros-y-gatos.jpg" alt="" id="convivencia"/>      
+            <h1>CENTRO VETERINARIO</h1><br/>
+	</header>
+        
+	<aside>
+            <h1>SOLICITAR CITA MEDICA</h1><br/>	
+            <form>
+                <table border="0">	
+                    <div>
+                    	<label for="Mascota">Mascota</label>
+			<input type="text" id="nombreMascota" placeholder="Nombre de la mascota"  required/>
+                    </div>
+                    <div>
+			<label for="Edad">Edad</label>
+			<input type="number" id="edad" min="0" max="100" step="1" placeholder="Promedio en años"/>
+                    </div>
+                    <div>
+			<label for="Raza">Raza</label>
+			<input type="text" id="raza" placeholder="Raza de la mascota"/>
+                    </div>
+                    <div>
+			<label for="Fecha">Fecha</label>
+			<input type="date" id="miFecha"/>
+                    </div>
+                    <div>
+			<label for="Hora">Hora</label>
+			<input type="time" id="miHora"/>
+                    </div>
+                    <div>
+			<label for="Amo">Amo</label>
+			<input type="text" id="dueño" placeholder="Nombre del dueño"/>
+                    </div>
+                    <div class="button">
+                        <button type="submit" onclick="enviar()">Validar cita</button> 
+                    </div>
+                </table> 
+            </form>
+        </aside>
+            <section>
+		<article>
+                    <h2>Cuidados y educacion para su perro</h2>
+                    <img src="imagenes/Perros.jpg"  id="perros">
+                    <p> Una mascota se convierte en un integrante mas de la familia, pero es muy
+                        importante educarlo para evitar dolores de cabeza y cuidarlo para
+                        prolongar su existencia. A la hora de adoptar o comprar un perro,
+                        necesitara pensar en el compromiso que implica esa desición. No solo
+			tendra que alimentarlo, requiere atención, tiempo y educación. Ello supone
+			una gran responsabilidad. Con esta sección buscamos apoyar y dar
+                        consejos sobre educación y cuidados de perros.<br>
+                        <a href="https://es.wikipedia.org/wiki/Portal:Perros">Ver más....</a>
+                    </p>			    
+		</article>		   
+		<article>
+                    <h2> Salir de viaje con su mascota</h2>
+                    <p> Viajar juntos puede resultar muy divertido y una gran experiencia
+                        siempre que estemos correctamente preparados. Es importante
+			tener en cuenta las condiciones de clima y del entorno a donde se
+			desplaza. Ademas se debe evitar el riesgo que supone el movimiento
+			incontrolado de la mascota dentro del automovil. Por eso, tenga en
+			cuenta los siguientes consejos.		
+                        <a href="https://es.wikipedia.org/wiki/Zooterapia">Ver  más...</a>
+                    </p>
+                    <img src="imagenes/viajarcongatos.jpg" id="gatos">
+		</article>
+            </section>
+	<footer id="pie">
+            <hr /> 
+		Contactenos<br>
+		Line Gratuita 018000-00001<br>
+		Correo: preguntas@caninosyfelinos.com
+        </footer>
+        
+        <script src="./centroVeterinario.js" type="text/javascript">
+            
+        </script>
+                   
+    </body>
+</html>
